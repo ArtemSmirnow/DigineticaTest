@@ -38,12 +38,13 @@ export default {
   width: 280px;
   height: 268px;
   margin-bottom: 28px;
-}
 
-.brandText {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
+  .brandText {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+  }
 
   .keyword {
     font-weight: 700;
@@ -79,10 +80,6 @@ export default {
     padding-left: 36px;
   }
 
-  .clearSearch {
-    display: none;
-  }
-
   .inputBrand:hover {
     border: 1px solid #E2EFFF;
   }
@@ -90,6 +87,10 @@ export default {
   .inputBrand:focus {
     padding-right: 30px;
     border: 1px solid #7397F5;
+  }
+
+  .clearSearch {
+    display: none;
   }
 
   .inputBrand:focus+.clearSearch {

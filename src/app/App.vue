@@ -42,6 +42,7 @@ button {
   cursor: pointer;
 }
 
+
 .mobilePage {
   display: none;
 }
@@ -49,15 +50,17 @@ button {
 .app {
   padding: 0 100px;
   min-width: 1440px;
-}
 
-.head {
-  display: flex;
-  justify-content: center;
-}
+  .head {
+    display: flex;
+    justify-content: center;
+  }
 
-.main {
-  display: flex;
+  .main {
+    display: flex;
+  }
+
+
 }
 
 @media (min-width: 0px) and (max-width: 640px) {

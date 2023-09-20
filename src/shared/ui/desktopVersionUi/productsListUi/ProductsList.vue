@@ -119,7 +119,6 @@ export default {
 
     .title {
       margin-top: 8px;
-      color: #333333;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;

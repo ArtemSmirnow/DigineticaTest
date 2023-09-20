@@ -31,35 +31,35 @@ export default {
 .size {
   width: 100%;
   height: 216px;
-}
 
-.brandText {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-
-  .keyword {
-    font-weight: 700;
-  }
-}
-
-.sizesList {
-  width: 100%;
-  height: 180px;
-  list-style-type: none;
-
-  .sizeAttribute {
+  .brandText {
     display: flex;
-    align-items: center;
-    width: 100%;
-    height: 20px;
-    font-size: 14px;
-    margin-bottom: 12px;
+    justify-content: center;
+    margin-bottom: 16px;
 
-    .checkSize {
-      width: 20px;
+    .keyword {
+      font-weight: 700;
+    }
+  }
+
+  .sizesList {
+    width: 100%;
+    height: 180px;
+    list-style-type: none;
+
+    .sizeAttribute {
+      display: flex;
+      align-items: center;
+      width: 100%;
       height: 20px;
-      margin-right: 12px;
+      font-size: 14px;
+      margin-bottom: 12px;
+
+      .checkSize {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+      }
     }
   }
 }

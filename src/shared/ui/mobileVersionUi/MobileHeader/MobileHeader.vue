@@ -48,7 +48,7 @@
       display: none;
     }
 
-    .inputSearch:focus+.clearSearch {
+    .inputSearch:focus + .clearSearch {
       display: block;
       min-width: 17px;
       height: 17px;

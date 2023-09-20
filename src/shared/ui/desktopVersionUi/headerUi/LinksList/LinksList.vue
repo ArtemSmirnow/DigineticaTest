@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul class="links">
-      <li class="li" v-for="link in links">{{ link }}</li>
+      <li class="infoLink" v-for="link in links"><a href="">{{ link }}</a></li>
     </ul>
   </div>
 </template>
@@ -25,9 +25,18 @@ export default {
   height: 17px;
   gap: 20px;
 
-  .li {
+  .infoLink {
     font-size: 14px;
     font-family: 'Inter', sans-serif;
   }
+}
+
+a{
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #125BAE;
 }
 </style>

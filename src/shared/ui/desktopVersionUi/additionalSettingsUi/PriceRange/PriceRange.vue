@@ -1,4 +1,5 @@
 <template>
+  <!-- Пока не смог найти как динамично добавлять символ рубля в конце -->
   <div class="price">
     <p class="priceText">Цена</p>
     <div class="priceRange">
@@ -15,13 +16,15 @@
   height: 72px;
   margin-top: 28px;
   margin-bottom: 28px;
+
+  .priceText {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.priceText {
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-}
+
 
 .priceRange {
   display: flex;
@@ -46,12 +49,12 @@
     outline: none;
     border: 1px solid #7397F5;
   }
-}
 
-.range::placeholder {
-  color: #D5D5D5;
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  .range::placeholder {
+    color: #D5D5D5;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+  }
 }
 
 input::-webkit-inner-spin-button {

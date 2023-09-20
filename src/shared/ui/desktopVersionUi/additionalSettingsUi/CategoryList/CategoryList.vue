@@ -1,4 +1,6 @@
 <template>
+  <!-- Довольно костыльная реализация раскрывающегося списка категорий, но в перспективе можно реализовать его через цикл,
+     перебирая получаенные данные с бэка (id,title категории и т.д.) -->
   <div class="category">
     <input type="checkbox" id="mainCategory" class="mainCategory">
     <label for="mainCategory" class="mainCategoryLabel">Название категории</label>
@@ -30,24 +32,24 @@
     width: 100%;
     padding-left: 8px;
   }
-}
 
-.subCategoryLabel {
-  list-style-type: none;
-  display: none;
-}
+  .subCategoryLabel {
+    list-style-type: none;
+    display: none;
+  }
 
-.mainCategory:checked~.subCategoryLabel {
-  color: black;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding-left: 32px;
-  height: 30px;
-}
+  .mainCategory:checked~.subCategoryLabel {
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 32px;
+    height: 30px;
+  }
 
-.mainCategoryLabel:hover {
-  color: #7397F5;
+  .mainCategoryLabel:hover {
+    color: #7397F5;
+  }
 }
 
 #firstLabel:hover {
